@@ -157,7 +157,7 @@ public class TheSimon extends Controls {
 		}
 		
 		transpImg.rotate(10/_delta);
-		transpImg6.rotate(-10/_delta);
+		transpImg6.rotate(-5/_delta);
 		img.setRotation(transpImg.getRotation());
 		img6.setRotation(transpImg6.getRotation());
 		
@@ -195,25 +195,25 @@ public class TheSimon extends Controls {
 			g.drawString("x "+(-getNumberOfGuesses()+this.initNumOfGuesses+"/"+this.initNumOfGuesses), 45, 470);
 		}
 		
-		
+		g.setColor(Color.black);
 		if(showKeys){
 			if(getNumberOfColors() >= 4){
 				//System.out.println("Should work?"); // debug
-				g.drawString("W", (float) (250+120*Math.cos(angle-3*Math.PI/4)), (float) (250+120*Math.sin(angle-3*Math.PI/4)));
-				g.drawString("A", (float) (250+120*Math.cos(angle-Math.PI/4)), (float) (250+120*Math.sin(angle-Math.PI/4)));
-				g.drawString("D", (float) (250+120*Math.cos(angle+Math.PI/4)), (float) (250+120*Math.sin(angle+Math.PI/4)));
-				g.drawString("Y", (float) (250+120*Math.cos(angle+3*Math.PI/4)), (float) (250+120*Math.sin(angle+3*Math.PI/4)));
+				g.drawString("W", (float) (245+120*Math.cos(angle-3*Math.PI/4)), (float) (245+120*Math.sin(angle-3*Math.PI/4)));
+				g.drawString("A", (float) (245+120*Math.cos(angle-Math.PI/4)), (float) (245+120*Math.sin(angle-Math.PI/4)));
+				g.drawString("D", (float) (245+120*Math.cos(angle+Math.PI/4)), (float) (245+120*Math.sin(angle+Math.PI/4)));
+				g.drawString("Y", (float) (245+120*Math.cos(angle+3*Math.PI/4)), (float) (245+120*Math.sin(angle+3*Math.PI/4)));
 			}
 			if(getNumberOfColors() >= 7){
 				//System.out.println("Should work?"); // debug
-				g.drawString("S", 250, 250);
-				g.drawString("LEFT", (float) (250+190*Math.cos(-angle-Math.PI)), (float) (250+190*Math.sin(-angle-Math.PI)));
-				g.drawString("RIGHT", (float) (250+190*Math.cos(-angle)), (float) (250+190*Math.sin(-angle)));
+				g.drawString("S", 245, 245);
+				g.drawString("<", (float) (245+190*Math.cos(-angle/2-Math.PI)), (float) (245+190*Math.sin(-angle/2-Math.PI)));
+				g.drawString(">", (float) (245+190*Math.cos(-angle/2)), (float) (245+190*Math.sin(-angle/2)));
 			}
 			if(getNumberOfColors() >= 9){
 				//System.out.println("Should work?"); // debug
-				g.drawString("UP", (float) (250+190*Math.cos(-angle-Math.PI/2)), (float) (250+190*Math.sin(-angle-Math.PI/2)));
-				g.drawString("DOWN", (float) (250+190*Math.cos(-angle+Math.PI/2)), (float) (250+190*Math.sin(-angle+Math.PI/2)));
+				g.drawString("^", (float) (245+190*Math.cos(-angle/2-Math.PI/2)), (float) (245+190*Math.sin(-angle/2-Math.PI/2)));
+				g.drawString("v", (float) (245+190*Math.cos(-angle/2+Math.PI/2)), (float) (245+190*Math.sin(-angle/2+Math.PI/2)));
 			}
 		}
 		

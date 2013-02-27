@@ -20,7 +20,7 @@ public class Credits extends BasicGameState{
 
 	public void enter(GameContainer container, StateBasedGame state) throws SlickException {
 
-		background = new Image("data/img/SimonMenu.png");
+		background = new Image("data/img/SimonCredits.png");
 	}
 	public void init(GameContainer container, StateBasedGame state) throws SlickException {
 	

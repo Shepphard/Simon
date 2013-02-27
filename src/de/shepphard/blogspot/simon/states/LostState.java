@@ -1,5 +1,6 @@
 package de.shepphard.blogspot.simon.states;
 
+import org.newdawn.slick.Color;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
@@ -36,6 +37,8 @@ public class LostState extends BasicGameState{
 
 	public void render(GameContainer container, StateBasedGame state, Graphics g) throws SlickException {
 		background.draw();
+		g.setColor(Color.white);
+		g.drawString("Try pushing the Space Bar for help!", 100, 400);
 		
 	}
 

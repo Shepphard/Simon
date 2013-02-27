@@ -79,10 +79,10 @@ public class Menu extends BasicGameState{
 		background.draw();
 		signOut.drawCentered(250, 250);
 		signIn.drawCentered(250, 250);
-		g.drawString("1 Easy", 220+x, 250+y);
-		g.drawString("2 Normal", 220+y, 250-x);
-		g.drawString("3 Hard", 220-x, 250-y);
-		g.drawString("Q Quit", 220-y, 250+x);
+		g.drawString("2 Normal", 220+x, 250+y);
+		g.drawString("1 Easy", 220+y, 250-x);
+		g.drawString("Q Quit", 220-x, 250-y);
+		g.drawString("3 Hard", 220-y, 250+x);
 		g.drawString("I Instructions", 30, 450);
 		g.drawString("C Credits", 380, 450);
 		

@@ -88,6 +88,10 @@ public abstract class Controls extends Game{
 	protected void update(GameContainer container, int delta, StateBasedGame state) throws SlickException, illegalImageException{
 		Input input = container.getInput();
 		
+		if(input.isKeyPressed(Input.KEY_ESCAPE)){
+			container.exit();
+		}
+		
 		if(getControls() && !getDead()){
 			if(getCurrentItem(getCurrent()) == 0){
 				goodKey(input, Input.KEY_W,0);

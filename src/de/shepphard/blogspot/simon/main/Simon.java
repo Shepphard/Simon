@@ -26,7 +26,7 @@ public class Simon extends StateBasedGame{
 	}
 	
 	public static void main(String[] args) throws SlickException {
-		AppGameContainer app = new AppGameContainer(new Simon("Simon 0.8"));
+		AppGameContainer app = new AppGameContainer(new Simon("Simon 1.0"));
 		app.setDisplayMode(500, 500, false);
 		app.setShowFPS(false);
 	    app.start();
